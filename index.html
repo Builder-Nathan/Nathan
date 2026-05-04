@@ -296,6 +296,13 @@
     }
     .portfolio-info h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 8px; }
     .portfolio-info p { font-size: 0.92rem; color: #777; line-height: 1.7; }
+    .portfolio-more {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.85rem; font-weight: 600; color: #4a6cf7;
+      margin-top: 12px; transition: gap 0.3s;
+    }
+    .portfolio-card:hover .portfolio-more { gap: 8px; }
+    .portfolio-card a { text-decoration: none; color: inherit; display: block; }
 
     /* ===== Experience ===== */
     .timeline {
@@ -564,30 +571,33 @@
       <h2 class="section-title">精选作品</h2>
       <p class="section-sub">每一个项目都是一次用心创作的故事</p>
       <div class="portfolio-grid">
-        <div class="portfolio-card">
+        <a href="#" target="_blank" class="portfolio-card">
           <div class="portfolio-cover">🖥️</div>
           <div class="portfolio-info">
             <span class="tag">Web 应用</span>
             <h3>项目名称一</h3>
             <p>这个项目的简短描述，说明它是什么、用了什么技术、解决了什么问题。</p>
+            <span class="portfolio-more">查看详情 →</span>
           </div>
-        </div>
-        <div class="portfolio-card">
+        </a>
+        <a href="#" target="_blank" class="portfolio-card">
           <div class="portfolio-cover">📱</div>
           <div class="portfolio-info">
             <span class="tag">移动端</span>
             <h3>项目名称二</h3>
             <p>这个项目的简短描述，说明它是什么、用了什么技术、解决了什么问题。</p>
+            <span class="portfolio-more">查看详情 →</span>
           </div>
-        </div>
-        <div class="portfolio-card">
+        </a>
+        <a href="#" target="_blank" class="portfolio-card">
           <div class="portfolio-cover">🎨</div>
           <div class="portfolio-info">
             <span class="tag">品牌设计</span>
             <h3>项目名称三</h3>
             <p>这个项目的简短描述，说明它是什么、用了什么技术、解决了什么问题。</p>
+            <span class="portfolio-more">查看详情 →</span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
